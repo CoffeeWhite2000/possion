@@ -35,14 +35,14 @@ $\frac{\partial^2 u}{\partial y^2}|_{(x_i,y_j)}=\frac{u_{(i,j-1)}-2u_{i,j}+u_{i.
     
 由此得到Possion方程的差分格式
 
-$4 u_{i,j}-u_{i+1.j}-\frac{u_{(i-1,j)}-u_{(i,j-1)}-u_{(i,j+1)}}{\Delta x^2}=f_{i,j} \forall (x_i,y_i)\in \Omega\backlash\partiall\Omega$
+$\frac{4 u_{i,j}-u_{i+1,j}-u_{(i-1,j)}-u_{(i,j-1)}-u_{(i,j+1)}}{\Delta x^2}=f_{i,j} \forall (x_i,y_i)\in \Omega \backlash \partial\Omega$
     
 边界条件：
 
 $u_{ij}=g_{i,j},\forall (x_i,y_i)\in \partial\Omega$
 
-Step3：求解微分方程     
+Step3：求解线性方程组     
 
-$4u_{i+j\times N}-u_{i+j\times N-1}-\frac{u_{(i+j\times N+1)}-u_{(i+j\times N-N)}-u_{(i+j\times N+N)}}{\Delta x^2}=f_{i+j\times N} \forall (x_i,y_i)\in \Omega\backlash\partiall\Omega$
+$\frac{4u_{i+j\times N}-u_{i+j\times N-1}-u_{(i+j\times N+1)}-u_{(i+j\times N-N)}-u_{(i+j\times N+N)}}{\Delta x^2}=f_{i+j\times N} \forall (x_i,y_i)\in \Omega\backlash\partiall\Omega$
     
 $u_{i+j\times N}=g_{i+j\times N},\forall (x_i,y_i)\in \partial\Omega$
