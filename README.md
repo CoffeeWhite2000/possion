@@ -37,7 +37,7 @@ Step2:采用中心差分构造差分格式
 
 $\frac{\partial^2 u}{\partial x^2}=\frac{u_{i-1,j}-2u_{i,j}+u_{i+1,j}}{\Delta x^2}$
     
-$\frac{\partial^2 u}{\partial y^2}_{x_i,y_j}=\frac{u_{(i,j-1)}-2u_{i,j}+u_{i.j+1}}{\Delta y^2}$
+$\frac{\partial^2 u}{\partial y^2}=\frac{u_{(i,j-1)}-2u_{i,j}+u_{i.j+1}}{\Delta y^2}$
     
 由此得到Possion方程的差分格式
 
