@@ -9,7 +9,7 @@ $u|_{\partial\Omega}=g(x,y)$
 
 $\Omega =(0,1)\times(0,1)$，
 
-$f(x,y)=,g(x,y)=$
+$f(x,y)=1,g(x,y)=0$
 
 为此我们构造其差分格式如下
 
