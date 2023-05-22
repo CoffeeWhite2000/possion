@@ -9,7 +9,7 @@ $u|_{\partial\Omega}=g(x,y)$
 
 为此我们构造其差分格式如下：
 
-Step1：使用$\Delta x=\Delta y=\frac{1}{N}$的网格线划分$\Omega$得到网格$\mathbb{J}=\{(x_i,y_j)|(x_i,y_j)\in\bar{\Omega}\}$
+Step1：使用$$\Delta x=\Delta y=\frac{1}{N}$$的网格线划分$$\Omega$$得到网格$$\mathbb{J}=\{(x_i,y_j)|(x_i,y_j)\in\bar{\Omega}\}$$
 
 $\mathbb{J}$上$u,f,g$的取值分别记为$u_{ij},f_{ij},g_{ij}$
 
