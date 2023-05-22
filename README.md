@@ -35,7 +35,7 @@ $\frac{\partial^2 u}{\partial y^2}|_{(x_i,y_j)}=\frac{u_{(i,j-1)}-2u_{i,j}+u_{i.
     
 由此得到Possion方程的差分格式
 
-$\frac{4 u_{i,j}-u_{i+1,j}-u_{(i-1,j)}-u_{(i,j-1)}-u_{(i,j+1)}}{\Delta x^2}=f_{i,j} \forall (x_i,y_i)\in \Omega \backlash \partial\Omega$
+$\{(4 u_{(i,j)}-u_{(i+1,j)}-u_{(i-1,j)}-u_{(i,j-1)}-u_{(i,j+1)}\}=f_{i,j}\times\Delta x^2 \forall (x_i,y_i)\in \Omega \backlash \partial\Omega$
     
 边界条件：
 
@@ -43,6 +43,6 @@ $u_{ij}=g_{i,j},\forall (x_i,y_i)\in \partial\Omega$
 
 Step3：求解线性方程组     
 
-$\frac{4u_{i+j\times N}-u_{i+j\times N-1}-u_{(i+j\times N+1)}-u_{(i+j\times N-N)}-u_{(i+j\times N+N)}}{\Delta x^2}=f_{i+j\times N} \forall (x_i,y_i)\in \Omega\backlash\partiall\Omega$
+$\{4u_{i+j\times N}-u_{i+j\times N-1}-u_{(i+j\times N+1)}-u_{(i+j\times N-N)}-u_{(i+j\times N+N)}\}=f_{i+j\times N}\times\Delta x^2 \forall (x_i,y_i)\in \Omega\backlash\partiall\Omega$
     
 $u_{i+j\times N}=g_{i+j\times N},\forall (x_i,y_i)\in \partial\Omega$
