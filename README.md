@@ -23,7 +23,7 @@ $\Omega$
 
 得到网格
 
-$\mathbb{J}=\{(x_i,y_j)|(x_i,y_j)\in\bar{\Omega}\}$
+$\mathbb{J}=((x_i,y_j)|(x_i,y_j)\in\bar{\Omega})$
 
 $\mathbb{J}$上
 
@@ -35,20 +35,20 @@ $u_{ij},f_{ij},g_{ij}$
 
 Step2:采用中心差分构造差分格式
 
-$\frac{\partial^2 u}{\partial x^2}|_{(x_i,y_j)}=\frac{u_{(i-1,j)}-2u_{i,j}+u_{i+1.j}}{\Delta x^2}$
+$\frac{\partial^2 u}{\partial x^2}=\frac{u_{i-1,j}-2u_{i,j}+u_{i+1,j}}{\Delta x^2}$
     
 $\frac{\partial^2 u}{\partial y^2}|_{(x_i,y_j)}=\frac{u_{(i,j-1)}-2u_{i,j}+u_{i.j+1}}{\Delta y^2}$
     
 由此得到Possion方程的差分格式
 
-$\{(4 u_{i,j}-u_{i+1,j}-u_{i-1,j}-u_{i,j-1}-u_{i,j+1}\}=f_{i,j}\times\Delta x^2 \forall (x_i,y_i)\in \Omega |\partial\Omega$
+$\{(4 u_{i,j}-u_{i+1,j}-u_{i-1,j}-u_{i,j-1}-u_{i,j+1})\}=f_{i,j}\times\Delta x^2, \forall (x_i,y_i)\in \Omega |\partial\Omega$
     
 边界条件：
 
-$u_{ij}=g_{i,j},\forall (x_i,y_i)\in \partial\Omega$
+$u_{ij}=g_{i,j} ,\forall (x_i,y_i)\in \partial\Omega$
 
 Step3：求解线性方程组     
 
-$\{4u_{i+j\times N}-u_{i+j\times N-1}-u_{i+j\times N+1}-u_{i+j\times N-N}-u_{i+j\times N+N}\}=f_{i+j\times N}\times\Delta x^2 \forall (x_i,y_i)\in \Omega|\partial\Omega$
+$\{4u_{i+j\times N}-u_{i+j\times N-1}-u_{i+j\times N+1}-u_{i+j\times N-N}-u_{i+j\times N+N}\}=f_{i+j\times N}\times\Delta x^2, \forall (x_i,y_i)\in \Omega|\partial\Omega$
     
 $u_{i+j\times N}=g_{i+j\times N},\forall (x_i,y_i)\in \partial\Omega$
