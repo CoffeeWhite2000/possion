@@ -45,4 +45,4 @@ Step3：求解微分方程
 
 $4u_{i+j\times N}-u_{i+j\times N-1}-\frac{u_{(i+j\times N+1)}-\frac{u_{(i+j\times N-N)}-\frac{u_{(i+j\times N+N)}}{\Delta x^2}=f_{i+j\times N} \forall (x_i,y_i)\in \Omega\backlash\partiall\Omega$
     
-$u_{i+j\time N}=g_{i+j\times N},\forall (x_i,y_i)\in \partial\Omega$
+$u_{i+j\times N}=g_{i+j\times N},\forall (x_i,y_i)\in \partial\Omega$
